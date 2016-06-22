@@ -1,0 +1,67 @@
+ul {
+	list-style-type: none;
+}
+
+nav {
+	height: 3em;
+}
+
+nav ul {
+	float: right;
+	text-transform: lowercase;
+}
+
+nav li {
+	float: left;
+	margin: 1em;
+}
+
+section {
+	clear: both;
+	text-align: center;
+}
+
+#about {
+	line-height: 1.6em;
+	margin: 1em;
+	text-align: left;
+}
+
+#work li {
+	margin: 1em;
+}
+
+#work h3 {
+	font-size: 18px;
+}
+
+#contact li {
+	margin-top: 1em;
+}
+
+#contact a {
+	text-decoration: none;
+}
+
+@media screen and (min-width: 350px) {
+	html,
+	body {
+		height: 100%;
+	}
+
+	nav {
+		float: left;
+		width: 25%;
+		height: 100%;
+	}
+
+	nav li {
+		float: none;
+		text-align: right;
+	}
+
+	section {
+		clear: none;
+		width: 75%;
+	}
+}
