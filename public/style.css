@@ -1,67 +1,95 @@
-ul {
-	list-style-type: none;
-}
-
-nav {
-	height: 3em;
-}
-
-nav ul {
-	float: right;
-	text-transform: lowercase;
-}
-
-nav li {
-	float: left;
-	margin: 1em;
-}
-
-section {
-	clear: both;
+html {
+	font-family: Helvetica, sans-serif;
+	font-size: 10px;
+	min-width: 360px;
 	text-align: center;
 }
 
-#about {
-	line-height: 1.6em;
-	margin: 1em;
-	text-align: left;
+#logo {
+	position: fixed;
+	bottom: 1rem;
+	left: 1rem;
+	z-index: 10;
 }
 
-#work li {
-	margin: 1em;
+header h1 {
+	font-size: 2.8rem;
+	font-weight: 400;
+	margin-top: 4rem;
 }
 
-#work h3 {
-	font-size: 18px;
+header p {
+	font-weight: 300;
+	font-size: 2.1rem;
+	line-height: 3.3rem;
+	margin: 2.1rem 0;
+	padding: 0 3.5rem 0 3.5rem;
 }
 
-#contact li {
-	margin-top: 1em;
+#profile-picture {
+	background-image: url('./assets/profile.jpg');
+	background-repeat: no-repeat;
+	height: 30rem;
+	margin: 0 auto;
+	position: relative;
+	width: 30rem;
 }
 
-#contact a {
+#profile-picture img {
+	position: absolute;
+	left: 4rem;
+	top: 14rem;
+	transform: rotate(-6deg);
+}
+
+ul {
+	list-style: none;
+	margin-top: 3.7rem;
+}
+
+li {
+	font-size: 1.6rem;
+	font-weight: 300;
+	margin-bottom: 1.6rem;
+}
+
+li a {
+	color: black;
 	text-decoration: none;
 }
 
-@media screen and (min-width: 350px) {
-	html,
-	body {
-		height: 100%;
+@media(min-width: 900px) {
+	#logo {
+		left: -16.5rem;
+		position: absolute;
+		top: -8rem;
 	}
 
-	nav {
-		float: left;
-		width: 25%;
-		height: 100%;
+	header {
+		margin: 0 auto;
+		position: relative;
+		width: 30rem;
 	}
 
-	nav li {
-		float: none;
-		text-align: right;
+	header h1 {
+		margin: 10rem 0 4.2rem 0;
 	}
 
-	section {
-		clear: none;
-		width: 75%;
+	header p {
+		left: -20rem;
+		position: absolute;
+		text-align: left;
+		width: 20rem;
+		z-index: 1;
+	}
+
+	ul {
+		margin-top: 7.2rem;
+	}
+
+	li {
+		display: inline;
+		font-size: 2.1rem;
+		margin: 0 2.8rem 0 2.8rem;
 	}
 }
