@@ -19,5 +19,9 @@
   "homepage": "https://github.com/newyork-anthonyng/portfolio#readme",
   "dependencies": {
     "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1"
   }
 }
