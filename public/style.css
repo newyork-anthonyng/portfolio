@@ -26,16 +26,31 @@ section {
 	padding-left: 12px;
 }
 
-li {
+ul > li {
 	list-style: none;
 }
 
+ol {
+	margin-left: 16px;
+}
+
 #work ul > li {
+	cursor: pointer;
 	margin-bottom: 21px;
 }
 
 #work div {
 	display: none;
+}
+
+#work .active div {
+	display: block;
+	padding-left: 12px;
+}
+
+#work .active .date,
+#work .active .company {
+	background-color: yellow;
 }
 
 #contact ul > li {
@@ -44,4 +59,8 @@ li {
 
 a:visited {
 	color: blue;
+}
+
+p {
+	line-height: 2em;
 }
