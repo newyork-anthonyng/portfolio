@@ -4,10 +4,8 @@
 	<meta charset="UTF-8"></meta>
 	<title>Anthony Ng</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/png" href="./assets/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="./reset.css" />
 	<link rel="stylesheet" type="text/css" href="./style.css" />
-	<!--<link href="./dist.min.css" type="text/css" rel="stylesheet" />-->
 </head>
 
 <body>
@@ -157,6 +155,9 @@
 		};
 
 		function showItem(item) {
+			if(item.classList.contains('active')) {
+				item.classList.remove('active');
+			} else {
 			workList.forEach(function(current) {
 				if(current === item) {
 					current.classList.add('active');
@@ -164,6 +165,7 @@
 					current.classList.remove('active');
 				}
 			});
+			}
 		}
 	</script>
 </body>
