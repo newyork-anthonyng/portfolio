@@ -5,36 +5,126 @@
 	<title>Anthony Ng</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/png" href="./assets/favicon.ico" />
-	<link href="./dist.min.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="./reset.css" />
+	<link rel="stylesheet" type="text/css" href="./style.css" />
+	<!--<link href="./dist.min.css" type="text/css" rel="stylesheet" />-->
 </head>
 
 <body>
 	<header>
-		<img id="logo" src="./assets/logo.svg" alt="Anthony Ng Initials">
-		<h1>Hi, I'm Anthony</h1>
-		<p>
-			I'm a full stack developer comfortable in the MEAN stack,
-			learning React, and trying to make things prettier than they have to be.
-		</p>
-
-		<div id="profile-picture">
-			<img class="animated swing infinite" src="./assets/mustache.svg" alt="Mustache">
-		</div>
+		<h1>Anthony Ng</h1>
+		<h2>
+			I am a full stack web developer with a passion for learning new technologies, making things fast and teaching others.
+		</h2>
 	</header>
+	<div>
+	</div>
 
-	<ul>
-		<li>
-			<a title="Link to Github site" href="https://github.com/newyork-anthonyng">Github</a>
-		</li>
-		<li>
-			<a title="Link to LinkedIn site" href="https://www.linkedin.com/in/anthony-ng-02856056">LinkedIn</a>
-		</li>
-		<li>
-			<a title="Email me: newyork.anthonyng@gmail.com" href="mailto:newyork.anthonyng@gmail.com">Email</a>
-		</li>
-		<li>
-			<a title="Link to my Resume" href="https://drive.google.com/file/d/0B5c48vRzSDJWdEZpMzM1YjMtaFE/view?usp=sharing">Resume</a>
-		</li>
-	</ul>
+	<section id="work">
+		<h1>Work</h1>
+		<hr>
+
+		<ul>
+			<li>
+				<span class="date">06/16 - Present</span>
+				<span class="company">General Assembly</span>
+				<p>
+					When I was a student in General Assembly, I was surrounded by amazing instructors that inspired and pushed me to be better.
+					I wanted to do what they did and became a mentor for General Assembly's JavaScript Circuit course; which covers basic JavaScript,
+					DOM manipulation, jQuery and external API's. I do 1-on-1 video sessions with students and answer any questions they have and
+					provide project feedback.
+				</p>
+			</li>
+			<li>
+				<span class="date">08/16 - Present</span>
+				<span class="company">Free Code Camp</span>
+				<p>
+					I have a passion for learning, and I believe writing and teaching others is one of the best ways to cement what you've learned.
+					I have started writing and submitting articles to Free Code Camp's Medium publication, including:
+					<ol>
+						<li>Let’s test React components with TDD, Mocha, Chai, and jsdom</li>
+						<li>Mistakes people make with their &lt;img&gt;’s</li>
+					</ol>
+				</p>
+			</li>
+			<li>
+				<span class="date">02/16 - 08/16</span>
+				<span class="company">Refundo</span>
+				<p>
+					At Refundo, I worked on their income tax preparation software named RushTax. I designed and developed front-end features
+					using AngularJS and jQuery. Later on, I learned PHP and worked on back-end APIs which handled sensitive client information,
+					file uploads and user account CRUD operations. With an eye towards best practices, I created API documentation and set up
+					front-end unit tests using Karma and Jasmine.
+				</p>
+			</li>
+			<li>
+				<span class="date">05/16 - 09/16</span>
+				<span class="company">Geeks Rule</span>
+				<p>
+					GeeksRule is a nonprofit organization focused on promoting STEM among underserved youth. I volunteered to provide a makeover
+					to their website, with a focus on making it responsive and performant.
+				</p>
+			</li>
+			<li>
+				<span class="date">10/15 - 12/15</span>
+				<span class="company">General Assembly</span>
+				<p>
+					I completed General Assembly's Web Development Immersive program, a 12 week course where I acquired the skills to build
+					real websites. I learned Ruby on Rails and the MEAN stack. Some notable projects I worked on was: a to-do list website built
+					with Rails designed to focus on work-life balance, which won first place in Programmr.com's Anthology Work-Life Balance
+					contest; a website that shows you a list of nearby stores and attractions using Geolocation and Google Map's API.
+				</p>
+			</li>
+			<li>
+				<span class="date">08/16 - 09/16</span>
+				<span class="company">Project: YouTube Repeat</span>
+				<p>
+					I love listening to songs on repeat. With this hobby project, I created a web app that will play a YouTube video and loop it.
+					I wanted to learn about CI and implemented Jenkins into my build process, with Istanbul/NYC for test coverage, and Mocha for
+					the testing framework. I used React, and Redux with Thunk to create the front-end, along with the YouTube Player API and
+					YouTube Data API.
+				</p>
+			</li>
+			<li>
+				<span class="date">07/16 - 08/16</span>
+				<span class="company">Project: Pomodoro Timer</span>
+				<p>
+					I use the pomodoro technique as my time management tool. With this hobby project, I created a Pomodoro Timer using React and
+					Redux, and learned about Web Workers to get the timer to work even when the webpage is inactive.
+				</p>
+			</li>
+			<li>
+				<span class="date">8/16</span>
+				<span class="company">Talk: Vim Talk</span>
+				<p>
+					As a newly converted Vim user, I gave a talk at General Assembly about the power of Vim, including navigation, macros and
+					common workflow patterns. Most importantly, people learned how to safely exit the Vim editor.
+				</p>
+			</li>
+		</ul>
+	</section>
+
+	<section id="contact">
+		<h1>Contact</h1>
+		<hr>
+
+		<ul>
+			<li>
+				<a href="mailto:newyork.anthonyng@gmail.com?Subject=Hello!">Email</a>
+			</li>
+			<li>
+				<a href="https://github.com/newyork-anthonyng">GitHub</a>
+			</li>
+			<li>
+				<a href="https://drive.google.com/file/d/0B5c48vRzSDJWeUhCNGVpcXN2S0k/view?usp=sharing">Resume</a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/anthony-ng-02856056">LinkedIn</a>
+			</li>
+			<li>
+				<a href="https://medium.com/@newyork.anthonyng">Medium</a>
+			</li>
+		</ul>
+	</section>
 </body>
 </html>
