@@ -1,5 +1,5 @@
 body {
-	font-family: Helvetica, sans-serif;
+	font-family: Courier, monospace;
 	max-width: 500px;
 	padding: 12px;
 }
@@ -31,7 +31,11 @@ ul > li {
 }
 
 ol {
-	margin-left: 16px;
+	margin-left: 50px;
+}
+
+ol > li {
+	margin-top: 12px;
 }
 
 #work ul > li {
@@ -44,12 +48,15 @@ ol {
 }
 
 #work .active div {
+	border-top: 1px solid black;
 	display: block;
+}
+
+#work .active p {
 	padding-left: 12px;
 }
 
-#work .active .date,
-#work .active .company {
+#work .active {
 	background-color: yellow;
 }
 
