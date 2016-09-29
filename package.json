@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/newyork-anthonyng/portfolio#readme",
   "dependencies": {
+    "compression": "^1.6.2",
     "express": "^4.14.0"
   },
   "devDependencies": {
