@@ -57,7 +57,8 @@ ol > li {
 	display: block;
 }
 
-#work .active p {
+#work .active p,
+#work .active a {
 	padding-left: 12px;
 }
 
