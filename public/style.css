@@ -1,79 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display+SC:700i');
+
 body {
-	font-family: Courier, monospace;
-	max-width: 500px;
-	padding: 12px;
+	background-image: url('./images/natural-paper.png');
+	font-family: 'Open Sans Condensed', serif;
+	letter-spacing: 2px;
 }
 
-h1 {
+.container {
+	border: 1px dashed black;
+	padding: 0px 50px;
+	margin: 75px auto;
+	max-width: 1000px;
+}
+
+header {
 	font-size: 21px;
-	font-weight: 300;
+	margin: 100px auto 50px;
+	max-width: 500px;
+	text-align: center;
 }
 
-h1 + p {
-	margin-top: 12px;
+.title {
+	border-bottom: 1px solid red;
+	font-size: 21px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
 }
 
-hr {
-	margin: 7px auto 21px 0;
-	width: 300px;
+@media (min-width: 550px) {
+	.title {
+		border-bottom: none;
+	}
 }
 
-section {
-	margin-top: 21px;
+.work {
+	margin-bottom: 40px;
 }
 
-.date {
-	display: inline-block;
-	width: 150px;
+.work__name {
+	font-family: 'Playfair Display SC', serif;
+	font-size: 21px;
+	letter-spacing: 4px;
+	margin-bottom: 0;
 }
 
-.date + .company {
-	padding-left: 12px;
+.work__description {
+	font-size: 18px;
+	letter-spacing: 3px;
+	line-height: 2.1;
+	margin: 12px auto 18px;
 }
 
-ul > li {
+.work__link {
+	font-size: 21px;
+	text-decoration: none;
+}
+
+footer li {
 	list-style: none;
+	margin-bottom: 40px;
+	text-align: center;
 }
 
-ol {
-	margin-left: 50px;
+footer hr {
+	border-color: red;
 }
 
-ol > li {
-	margin-top: 12px;
+footer a {
+	font-size: 18px;
+	text-decoration: none;
 }
 
-#work ul > li {
-	cursor: pointer;
-	margin-bottom: 21px;
-}
+@media (min-width: 550px) {
+	footer ul {
+		display: flex;
+		justify-content: space-around;
+	}
 
-#work div {
-	display: none;
-}
-
-#work .active div {
-	border-top: 1px solid black;
-	display: block;
-}
-
-#work .active p,
-#work .active a {
-	padding-left: 12px;
-}
-
-#work .active {
-	background-color: yellow;
-}
-
-#contact ul > li {
-	margin-bottom: 16px;
-}
-
-a:visited {
-	color: blue;
-}
-
-p {
-	line-height: 2em;
+	footer li {
+		margin-bottom: 0;
+	}
 }
