@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import styles from './App.css';
+import Navigation from './Navigation/Navigation';
 
 class App extends Component {
   render() {
     return (
       <div className={styles.container}>
-        <h1>Hello World</h1>
+        <Navigation />
+
+        {this.props.children}
       </div>
     );
   }

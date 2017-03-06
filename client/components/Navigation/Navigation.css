@@ -1,0 +1,16 @@
+.list {
+  list-style: none;
+}
+
+.list a {
+  color: rgba(155, 155, 155, 50);
+  text-decoration: none;
+}
+
+.list a:visited {
+  color: rgba(155, 155, 155, 50);
+}
+
+.activeLink {
+  color: white;
+}
