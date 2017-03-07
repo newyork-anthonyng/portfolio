@@ -6,6 +6,7 @@
   "author": "<newyork.anthonyng@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "classnames": "^2.2.5",
     "html-webpack-plugin": "^2.28.0",
     "path": "^0.12.7",
     "react": "^15.4.2",
