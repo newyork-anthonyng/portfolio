@@ -1,4 +1,5 @@
 .itemDetail {
+  display: flex;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
@@ -6,4 +7,13 @@
 
 .itemDetail__active {
   max-height: 1000px;
+}
+
+.itemTitle {
+  cursor: pointer;
+  user-select: none;
+}
+
+.itemAside {
+  margin-right: 60px;
 }

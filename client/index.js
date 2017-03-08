@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, browserHistory } from 'react-router';
+import { Router, Route, hashHistory } from 'react-router';
 
-import App from './components/App';
-import Work from './components/Work/Work';
-import Projects from './components/Projects/Projects';
-import Articles from './components/Articles/Articles';
-import About from './components/About/About';
+import App from './App';
+import Work from './pages/Work/Work';
+import Projects from './pages/Projects/Projects';
+import Articles from './pages/Articles/Articles';
+import About from './pages/About/About';
 
 ReactDOM.render(
-  <Router history={browserHistory}>
+  <Router history={hashHistory}>
     <Route path="/" component={App}>
       <Route path="/work" component={Work} />
       <Route path="/Projects" component={Projects} />
