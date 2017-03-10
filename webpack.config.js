@@ -25,7 +25,7 @@ module.exports = {
         loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
       },
       {
-        test: /\.gif$/,
+        test: /\.(gif$|png$)/,
         loader: 'file-loader?name=[name].script.[ext]'
       },
     ],

@@ -1,5 +1,5 @@
 import React, { PureComponent, PropTypes } from 'react';
-import Logo from '../Logo/Logo';
+import Logo from '../icons/Logo/Logo';
 import WhiteAnimation from '../../assets/logo_white.gif';
 import BlackAnimation from '../../assets/logo_black.gif';
 import cx from 'classnames';

@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router';
 import styles from './Navigation.css';
+import HoverableLogo from '../HoverableLogo/HoverableLogo'
 
 const Navigation = () => {
   return (
     <nav>
+      <HoverableLogo theme="black" />
       <ul className={styles.list}>
         <li>
           <Link to="/work" activeClassName={styles.activeLink}>Work</Link>
