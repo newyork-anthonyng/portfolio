@@ -142,10 +142,13 @@ section:nth-of-type(even) .section__header {
   }
 }
 
+.work__header__container {
+  margin-bottom: 12px;
+}
+
 .work__header {
   font-size: 14px;
   font-weight: 400;
-  margin-bottom: 12px;
   text-transform: uppercase;
 }
 
@@ -185,7 +188,7 @@ section:nth-of-type(even) .section__header {
   }
 }
 
-.projects__item {
+.projects__item__container {
   display: block;
   font-size: 14px;
   margin-bottom: 48px;
@@ -194,19 +197,19 @@ section:nth-of-type(even) .section__header {
 }
 
 @media (min-width: 800px) {
-  .projects__item {
+  .projects__item__container {
     font-size: 15px;
     margin-bottom: 250px;
     text-align: left;
-    width: 33%;
+    width: calc(31% - 2px);
   }
 }
 
-.projects__item:last-child {
+.projects__item__container:last-child {
   margin-bottom: 0;
 }
 
-.articles__item {
+.articles__item__container {
   display: block;
   font-size: 14px;
   margin-bottom: 48px;
@@ -214,7 +217,7 @@ section:nth-of-type(even) .section__header {
 }
 
 @media (min-width: 800px) {
-  .articles__item {
+  .articles__item__container {
     box-sizing: border-box;
     font-size: 15px;
     margin-bottom: 69px;
@@ -222,12 +225,12 @@ section:nth-of-type(even) .section__header {
     width: 33%;
   }
 
-  .articles__item:last-of-type {
+  .articles__item__container:last-of-type {
     margin-right: auto;
   }
 }
 
-.articles__item:last-child {
+.articles__item__container:last-child {
   margin-bottom: 0;
 }
 
@@ -306,4 +309,79 @@ section:nth-of-type(even) .section__header {
 
 .about__contact_info li:nth-child(even) {
   float: right;
+}
+
+/* Hover animation */
+.projects__item__container a {
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  border-top: 2px solid rgba(0, 0, 0, 0);
+  display: inline;
+  right: -7px;
+  padding: 15px 10px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 800px) {
+  .projects__item {
+    left: -10px;
+  }
+}
+
+.projects__item__container:hover a {
+  border-color: rgba(0, 0, 0, 1);
+  padding: 8px 10px;
+}
+
+.work__header::before,
+.projects__item__container a::before {
+  border-left: 2px solid rgba(0, 0, 0, 0);
+  bottom: 0;
+  color: rgba(0, 0, 0, 0);
+  content: attr(data-text);
+  left: 0;
+  max-height: 0;
+  position: absolute;
+  top: 0;
+  transition: max-height .3s,border-color 0s;
+  right: 0;
+}
+
+.work__header::after,
+.projects__item__container a::after {
+  border-right: 2px solid rgba(0, 0, 0, 0);
+  bottom: 0;
+  color: rgba(0, 0, 0, 1);
+  content: attr(data-text);
+  left: 0;
+  max-height: 0;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: max-height .3s,border-color 0s;
+}
+
+.work__header:hover::after,
+.work__header:hover::before,
+.projects__item__container:hover a::after,
+.projects__item__container:hover a::before {
+  border-color: rgba(0, 0, 0, 1);
+  max-height: 100%;
+  transition-delay: .28s;
+}
+
+.work__header__container .work__header {
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  border-top: 2px solid rgba(0, 0, 0, 0);
+  display: inline;
+  left: -10px;
+  padding: 15px 10px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.work__header__container:hover .work__header {
+  border-color: rgba(0, 0, 0, 1);
+  padding: 8px 10px;
 }
