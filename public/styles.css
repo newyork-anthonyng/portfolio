@@ -240,7 +240,7 @@ section:nth-of-type(even) .section__header {
   }
 
   .about__main {
-    width: 88%;
+    width: 85%;
   }
 }
 
@@ -300,6 +300,7 @@ section:nth-of-type(even) .section__header {
 @media (min-width: 800px) {
   .about__contact_info li {
     font-size: 15px;
+    width: 100%;
   }
 }
 
@@ -312,7 +313,7 @@ section:nth-of-type(even) .section__header {
 }
 
 /* Hover animation */
-.projects__item__container a {
+.projects__item {
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   border-top: 2px solid rgba(0, 0, 0, 0);
   display: inline;
@@ -328,13 +329,14 @@ section:nth-of-type(even) .section__header {
   }
 }
 
-.projects__item__container:hover a {
+.projects__item:hover {
   border-color: rgba(0, 0, 0, 1);
   padding: 8px 10px;
 }
 
+.about__contact_info a::before,
 .work__header::before,
-.projects__item__container a::before {
+.projects__item::before {
   border-left: 2px solid rgba(0, 0, 0, 0);
   bottom: 0;
   color: rgba(0, 0, 0, 0);
@@ -347,8 +349,9 @@ section:nth-of-type(even) .section__header {
   right: 0;
 }
 
+.about__contact_info a::after,
 .work__header::after,
-.projects__item__container a::after {
+.projects__item::after {
   border-right: 2px solid rgba(0, 0, 0, 0);
   bottom: 0;
   color: rgba(0, 0, 0, 1);
@@ -362,16 +365,18 @@ section:nth-of-type(even) .section__header {
   transition: max-height .3s,border-color 0s;
 }
 
+.about__contact_info li:hover a::before,
+.about__contact_info li:hover a::after,
 .work__header:hover::after,
 .work__header:hover::before,
-.projects__item__container:hover a::after,
-.projects__item__container:hover a::before {
+.projects__item:hover::after,
+.projects__item:hover::before {
   border-color: rgba(0, 0, 0, 1);
   max-height: 100%;
   transition-delay: .28s;
 }
 
-.work__header__container .work__header {
+.work__header {
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   border-top: 2px solid rgba(0, 0, 0, 0);
   display: inline;
@@ -381,7 +386,21 @@ section:nth-of-type(even) .section__header {
   transition: all 0.3s ease-in-out;
 }
 
-.work__header__container:hover .work__header {
+.work__header:hover {
+  border-color: rgba(0, 0, 0, 1);
+  padding: 8px 10px;
+}
+
+.about__contact_info a {
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  border-top: 2px solid rgba(0, 0, 0, 0);
+  left: -10px;
+  padding: 15px 10px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.about__contact_info li:hover a {
   border-color: rgba(0, 0, 0, 1);
   padding: 8px 10px;
 }
