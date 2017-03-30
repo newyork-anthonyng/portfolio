@@ -49,7 +49,8 @@ header {
   }
 
   .logo__container {
-    left: -84px;
+    height: 39px;
+    left: -91px;
   }
 }
 
@@ -260,6 +261,7 @@ section:nth-of-type(even) .section__header {
 .about__text {
   color: #707C80;
   font-size: 14px;
+  font-weight: 300;
   line-height: 24px;
   margin-bottom: 24px;
 }
@@ -273,7 +275,7 @@ section:nth-of-type(even) .section__header {
     box-sizing: border-box;
     font-size: 16px;
     padding-right: 20px;
-    width: 50%;
+    width: 231px;
   }
 }
 
@@ -300,6 +302,7 @@ section:nth-of-type(even) .section__header {
 @media (min-width: 800px) {
   .about__contact_info li {
     font-size: 15px;
+    text-align: right;
     width: 100%;
   }
 }
@@ -324,8 +327,14 @@ section:nth-of-type(even) .section__header {
 }
 
 @media (min-width: 800px) {
-  .projects__item {
+  .projects__item__container:nth-of-type(3n+1) .projects__item {
     left: -10px;
+  }
+  .projects__item__container:nth-of-type(3n+2) .projects__item {
+    left: -20px;
+  }
+  .projects__item__container:nth-of-type(3n+3) .projects__item {
+    left: -30px;
   }
 }
 
