@@ -5,10 +5,10 @@ const path = require('path');
 const compression = require('compression');
 
 app.use(compression());
-app.use(express.static(path.join(__dirname, 'public'), { maxAge: '30d' }));
+app.use(express.static(path.join(__dirname, 'dist'), { maxAge: '30d' }));
 
 app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname + '/public/index.html'));
+	res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
 
 app.all('*', (req, res) => {
