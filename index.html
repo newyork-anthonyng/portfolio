@@ -5,75 +5,10 @@
 	<title>Anthony Ng</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
-	<style>
-		body {
-			transform: translateX(0);
-			transition: all 0.6s ease-in-out;
-		}
-		body.loading {
-			transform: translateX(100vw);
-			overflow: hidden;
-		}
-
-		.loading__logo__container {
-			bottom: 0;
-			top: 0;
-			left: 0;
-			position: absolute;
-			right: 0;
-			transform: translate(-100vw);
-		}
-
-		.loading__logo {
-			margin: 100px auto;
-			max-width: 500px;
-			padding: 0 40px;
-		}
-
-		@media (min-width: 800px) {
-			.loading__logo {
-				margin: 200px auto;
-			}
-		}
-	</style>
+	<link href="./styles.css" rel="stylesheet" type="text/css">
 </head>
 
-<body class="loading">
-	<div class="loading__logo__container">
-		<div class="loading__logo">
-			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 898.7 176.3" style="enable-background:new 0 0 898.7 176.3" xml:space="preserve">
-			<g>
-				<g>
-					<path d="M215.3,91.8v49.3h-22.5V98.3c0-9.9-5.8-16.1-15.5-16.1c-11.2,0.1-18,8.6-18,20.1V141h-22.5V62.6h22.5v13.7
-						c5.5-9.8,14.9-14.5,27.1-14.6C204,61.7,215.3,73.4,215.3,91.8z"/>
-					<path d="M283.3,136.7c-5.8,3.4-13.1,5.4-20.4,5.4c-14,0-24.7-8-24.7-24.2V81.6h-10.9V66.1h10.9V44.5h22.3v21.6h21.3v15.6h-21.3
-						v32.4c0,6.6,2.8,9.2,7.6,9c2.9,0,6.4-1,10.5-2.9L283.3,136.7z"/>
-					<path d="M376.1,91.8v49.3h-22.5V98.3c0-9.9-5.8-16.1-15.5-16.1c-11.2,0.1-18.1,8.6-18.1,20.1V141h-22.5V32.8H320v43.6
-						c5.5-9.8,14.9-14.6,27.1-14.7C364.9,61.7,376.1,73.4,376.1,91.8z"/>
-					<path d="M472.9,101.9c0,23.9-16.9,40.1-42,40.1c-25.3,0-42.2-16.2-42.2-40.1c0-24.1,16.9-40,42.2-40
-						C456,61.9,472.9,77.8,472.9,101.9z M411.3,102.1c0,12.8,7.9,21.6,19.6,21.6c11.5,0,19.6-8.8,19.6-21.6s-8-21.6-19.6-21.6
-						C419.2,80.5,411.3,89.3,411.3,102.1z"/>
-					<path d="M566.2,91.8v49.3h-22.5V98.3c0-9.9-5.8-16.1-15.5-16.1c-11.2,0.1-18,8.6-18,20.1V141h-22.5V62.6h22.5v13.7
-						c5.5-9.8,14.9-14.5,27.2-14.6C554.9,61.7,566.2,73.4,566.2,91.8z"/>
-					<path d="M622.2,149.9c-5.5,13.9-15.2,20.6-28.8,20.6c-8.3,0-14.9-2.3-21.3-7.6l9.5-16.2c3.5,2.9,6.6,4.2,10.2,4.2
-						c4.7,0,8.2-2.3,10.4-7l2.2-4.4l-32.6-76.9H595l20.6,54l18.5-54h22.5L622.2,149.9z"/>
-					<path d="M773.6,141.1l-49.5-65.5v65.5h-22V38.9h21l49.6,65.7V38.9h21.9v102.2H773.6z"/>
-					<path d="M890.2,133.8c0,22.3-16.8,36.5-41.9,36.5c-13.3,0-25.1-4.2-34.2-10.4l8.3-15.8c7.2,5.1,15.5,7.9,24.4,7.9
-						c12.8,0,21-6.9,21-17.5v-8.9c-5.3,7.3-13.3,11.4-23.6,11.4c-20.3,0-34.3-15.2-34.3-38c0-22.2,13.7-37.2,33.7-37.2
-						c10.7-0.1,18.8,4.1,24.2,11.4V62.6h22.3L890.2,133.8L890.2,133.8z M867.9,99.7c0-12.1-7.4-20.4-18.4-20.4s-18.4,8.5-18.5,20.4
-						c0.1,12,7.4,20.3,18.5,20.3C860.4,120,867.9,111.6,867.9,99.7z"/>
-				</g>
-				<g>
-					<g>
-						<path d="M118.6,141.1h-25L45.6,6.5h24.9L118.6,141.1z"/>
-					</g>
-					<path d="M29.8,128.9c0,7.3-5.1,12.3-12.3,12.3s-12.1-5-12.1-12.3c0-7.2,5-12.1,12.1-12.1S29.8,121.7,29.8,128.9z"/>
-				</g>
-			</g>
-			</svg>
-		</div>
-	</div>
-
+<body>
 	<div class="container">
 		<header>
 			<div class="logo__container">
@@ -226,11 +161,5 @@
 			</ul>
 		</section>
 	</div>
-	<link href="./styles.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript">
-		window.setTimeout(function() {
-			document.body.classList.remove('loading');
-		}, 1000);
-	</script>
-</body>
-</html>
+
+

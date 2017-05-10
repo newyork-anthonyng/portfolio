@@ -11,6 +11,14 @@ gulp.task('minify-css', function() {
 
 gulp.task('minify-html', function() {
   return gulp.src('public/index.html')
-    .pipe(htmlmin({ collapseWhiteSpace: true }))
+    .pipe(htmlmin({
+      collapseWhiteSpace: true,
+      collapseInlineTagWhitespace: true,
+      conservativeCollapse: true,
+      preserveLineBreaks: true,
+      removeComments: true,
+      removeEmptyElements: true,
+      removeOptionalTags: true,
+    }))
     .pipe(gulp.dest('./'));
 });
