@@ -4,13 +4,13 @@ var concat = require('gulp-concat');
 var htmlmin = require('gulp-htmlmin');
 
 gulp.task('minify-css', function() {
-  return gulp.src('public/styles.css')
+  return gulp.src('src/styles.css')
     .pipe(cleanCSS())
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('./'));
 });
 
 gulp.task('minify-html', function() {
-  return gulp.src('public/index.html')
+  return gulp.src('src/index.html')
     .pipe(htmlmin({ collapseWhiteSpace: true }))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('./'));
 });
