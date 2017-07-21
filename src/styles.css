@@ -1,3 +1,10 @@
+html {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
 body {
   color: #FF76A1;
   font-family: Helvetica, sans-serif;
@@ -25,7 +32,7 @@ ul {
 
 /* Mobile styles */
 main {
-  margin: 130px 0 160px 0;
+  margin-bottom: 160px;
 }
 
 main h1 {
@@ -57,7 +64,7 @@ footer a {
 /* Desktop styles */
 @media (min-width: 800px) {
   main {
-    margin: 200px 0 250px 0;
+    margin-bottom: 250px;
   }
 
   main h1 {
