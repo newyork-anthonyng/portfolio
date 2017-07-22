@@ -6,6 +6,10 @@ html {
   padding: 10px 0;
 }
 
+* {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
 body {
   color: #FF76A1;
   font-family: Helvetica, sans-serif;
@@ -90,7 +94,7 @@ footer a {
 
   footer h1 {
     font-size: 37px;
-    line-height: 12px;
+    line-height: 18px;
     margin-bottom: 0;
     margin-right: 35px;
   }
