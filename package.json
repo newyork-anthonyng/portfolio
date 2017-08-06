@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "gulp minify-css && gulp minify-html"
+    "build": "gulp minify-css && gulp minify-html",
+    "precommit": "npm run build && git add ."
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.13",
     "gulp-concat": "^2.6.0",
-    "gulp-htmlmin": "^3.0.0"
+    "gulp-htmlmin": "^3.0.0",
+    "husky": "^0.14.3"
   }
 }
