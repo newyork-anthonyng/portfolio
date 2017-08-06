@@ -3,7 +3,16 @@
 <head>
   <meta charset="UTF-8"></meta>
   <title>Anthony Ng</title>
+
+  <link rel="icon" type="image/png" href="./static/icon_48x48.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  <link href="./styles.css" rel="stylesheet" type="text/css">
+  <link href="/manifest.json" rel="manifest">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffb256">
+
   <meta property="og:title" content="Anthony Ng">
   <meta property="og:url" content="http://anthonyng.me/">
   <meta property="og:image" content="https://avatars3.githubusercontent.com/u/14035529?v=4&s=460">
@@ -13,11 +22,6 @@
   <meta property="og:profile:first_name" content="Anthony">
   <meta property="og:profile:last_name" content="Ng">
   <meta property="og:profile:gender" content="male">
-  <link rel="icon" type="image/png" href="https://avatars3.githubusercontent.com/u/14035529?v=4&s=32">
-
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
-  <link href="./styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -63,5 +67,17 @@
       </li>
     </ul>
   </footer>
+
+  <script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js').then(function(registration) {
+            console.log('ServiceWorker registration successful');
+          }, function(err) {
+            console.error('ServiceWorker failed', err);
+          });
+      });
+    }
+  </script>
 </body>
 </html>
