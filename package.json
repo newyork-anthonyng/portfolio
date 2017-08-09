@@ -27,6 +27,7 @@
     "gulp-clean-css": "^2.0.13",
     "gulp-concat": "^2.6.0",
     "gulp-htmlmin": "^3.0.0",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "merge-stream": "^1.0.1"
   }
 }
