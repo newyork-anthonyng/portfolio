@@ -4,9 +4,8 @@
   "description": "This is my personal portfolio site.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "build": "gulp minify-css && gulp minify-html",
-    "precommit": "npm run build && git add ."
+    "start" : "nps",
+    "precommit": "npm start build && git add ."
   },
   "repository": {
     "type": "git",
@@ -28,6 +27,7 @@
     "gulp-concat": "^2.6.0",
     "gulp-htmlmin": "^3.0.0",
     "husky": "^0.14.3",
-    "merge-stream": "^1.0.1"
+    "merge-stream": "^1.0.1",
+    "nps": "^5.7.1"
   }
 }
