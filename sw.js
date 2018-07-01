@@ -1,8 +1,7 @@
-const CACHE_NAME = 'my-site-cache-v3';
+const CACHE_NAME = 'my-site-cache-v4';
 const urlsToCache = [
   '/',
-  '/small.css',
-  '/large.css',
+  '/styles.css',
   'https://fonts.googleapis.com/css?family=Nunito+Sans',
   'https://fonts.gstatic.com/s/nunitosans/v2/iJ4p9wO0GDKJ-D5teKuZqogp9Q8gbYrhqGlRav_IXfk.woff2',
 ];
