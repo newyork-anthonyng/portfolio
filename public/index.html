@@ -30,48 +30,95 @@
 </head>
 
 <body>
-  <main>
-    <h1>Anthony Ng</h1>
+  <div class="contact__wrapper">
+    <h1 class="name">Anthony Ng</h1>
 
-    <ul>
-      <li>
-        <a href="https://github.com/newyork-anthonyng" title="Visit my GitHub Profile">
-          Code
-        </a>
-      </li>
-      <li>
-        <a href="https://www.meetup.com/ReactJS-San-Francisco/events/241023959/" title="See my upcoming talk at the San Francisco ReactJS meetup">
-          Talk
-        </a>
-      </li>
-      <li>
-        <a href="https://medium.com/@newyork.anthonyng" title="See my Medium Publications">
+    <div class="contact-me__container">
+      <h2 class="contact-me__header">Contact me</h2>
+      <ul class="contact-me__list">
+        <li class="contact-me__list-item">
+          <a class="contact-me__link" href="mailto:newyork.anthonyng@gmail.com?Subject=Hello!" title="Email Me">
+            Email
+          </a>
+        </li>
+        <li class="contact-me__list-item">
+          <a class="contact-me__link" href="https://www.linkedin.com/in/anthony-ng-02856056/" title="Visit my LinkedIn profile">
+            LinkedIn
+          </a>
+        </li>
+        <li class="contact-me__list-item">
+          <a class="contact-me__link" href="https://drive.google.com/file/d/0B5c48vRzSDJWYjdvR3NUZDJTVTg/view?usp=sharing" title="See my Resume, hosted on Google Drive">
+            Resume
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="subject__wrapper">
+    <div class="subject__container">
+        <h3 class="subject__header">
+          <a class="subject__header-link" href="https://github.com/newyork-anthonyng" title="Visit my GitHub Profile">
+            Code
+          </a>
+        </h3>
+
+        <ul class="subject__list">
+          <li class="subject__list-item">
+            <a class="subject__link" href="https://github.com/newyork-anthonyng/my-gradient-background">my-gradient-background</a>
+          </li>
+          <li class="subject__list-item">
+            <a class="subject__link" href="https://github.com/newyork-anthonyng/react-dynamic-overflow">react-dynamic overflow</a>
+          </li>
+          <li class="subject__list-item">
+            <a class="subject__link" href="https://github.com/webpack/tapable">tapable</a>
+          </li>
+        </ul>
+    </div>
+
+    <div class="subject__container">
+      <h3 class="subject__header">
+        <a class="subject__header-link" href="https://medium.com/@newyork.anthonyng" title="See my Medium Publications">
           Write
         </a>
-      </li>
-    </ul>
-  </main>
+      </h3>
 
-  <footer>
-    <h1>Contact Me</h1>
-    <ul>
-      <li>
-        <a href="mailto:newyork.anthonyng@gmail.com?Subject=Hello!" title="Email Me">
-          Email
+      <ul class="subject__list">
+        <li class="subject__list-item">
+          <a class="subject__link" href="https://medium.com/@newyork.anthonyng/testing-react-components-state-b57bfc712b90">Testing React Component’s State</a>
+        </li>
+        <li class="subject__list-item">
+          <a class="subject__link" href="https://codeburst.io/use-webpack-with-dirname-correctly-4cad3b265a92">Use webpack with __dirname correctly</a>
+        </li>
+        <li class="subject__list-item">
+          <a class="subject__link" href="https://medium.freecodecamp.org/table-prejudice-and-html-xenophobia-30704984785e">&lt;table&gt; prejudice and HTML xenophobia</a>
+        </li>
+        <li class="subject__list-item">
+          <a class="subject__link" href="https://medium.freecodecamp.org/you-need-to-stop-making-these-6-mistakes-with-your-img-s-e242c02d14be">Don't ruin your &lt;img&gt;</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="subject__container">
+      <h3 class="subject__header">
+        <a class="subject__header-link" href="https://www.meetup.com/NYC-Bootcampers-Anonymous/events/255177495/" title="See my upcoming talk at the Bootcampers Anonymous meetup">
+          Talk
         </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/anthony-ng-02856056/" title="Visit my LinkedIn profile">
-          LinkedIn
-        </a>
-      </li>
-      <li>
-        <a href="https://drive.google.com/file/d/0B5c48vRzSDJWYjdvR3NUZDJTVTg/view?usp=sharing" title="See my Resume, hosted on Google Drive">
-          Resume
-        </a>
-      </li>
-    </ul>
-  </footer>
+      </h3>
+
+      <ul class="subject__list">
+        <li class="subject__list-item">
+          <a class="subject__link" href="https://www.meetup.com/NYC-Bootcampers-Anonymous/events/255177495/">MTA subway time: harder, better, faster, stronger @ Bootcampers Anonymous, Nov 2018</a>
+        </li>
+        <li class="subject__list-item">
+          <a class="subject__link" href="https://www.meetup.com/ReactJS-San-Francisco/events/241023959/">Using Code Katas to improve your React Skills @ ReactJS, Nov 2017</a>
+        </li>
+        <li class="subject__list-item">
+          <a class="subject__link" href="https://www.meetup.com/NYC-Bootcampers-Anonymous/events/233100643/">Learn you Vim @ Bootcampers Anonymous, Aug 2016</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <script type="text/javascript">"serviceWorker"in navigator&&window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").then(function(e){console.log("ServiceWorker registration successful")},function(e){console.error("ServiceWorker failed",e)})})</script>
 </body>
