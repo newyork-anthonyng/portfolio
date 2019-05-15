@@ -10,7 +10,7 @@ body {
 
 @media (min-width: 600px) {
   body {
-    padding: 110px 130px 100px 130px;
+    padding: 110px 130px 0px 130px;
   }
 }
 
