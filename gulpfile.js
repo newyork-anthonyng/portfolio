@@ -25,7 +25,14 @@ gulp.task('minify-js', function() {
     .pipe(gulp.dest('./public'));
 });
 
-gulp.task('copy-assets', function() {
-  return gulp.src(['manifest.json', 'static/*'])
+gulp.task('copy-assets', ['manifest', 'static']);
+
+gulp.task('manifest', function() {
+  return gulp.src('manifest.json')
+    .pipe(gulp.dest('./public/'));
+});
+
+gulp.task('static', function() {
+  return gulp.src('static/*')
     .pipe(gulp.dest('./public/static'));
 });
