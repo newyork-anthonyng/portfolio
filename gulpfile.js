@@ -28,7 +28,7 @@ gulp.task('minify-js', function() {
 gulp.task('copy-assets', ['manifest', 'static']);
 
 gulp.task('manifest', function() {
-  return gulp.src('manifest.json')
+  return gulp.src(['manifest.json', 'robots.txt'])
     .pipe(gulp.dest('./public/'));
 });
 
