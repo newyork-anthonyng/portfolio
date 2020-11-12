@@ -3,7 +3,7 @@ const htmlmin = require("gulp-htmlmin");
 
 gulp.task("minify-html", function () {
   return gulp
-    .src("src/index.html")
+    .src("src/*.html")
     .pipe(
       htmlmin({
         collapseWhiteSpace: true,
