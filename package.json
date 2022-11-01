@@ -19,7 +19,7 @@
   "homepage": "https://github.com/newyork-anthonyng/portfolio#readme",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
     "gulp-htmlmin": "^3.0.0",
     "husky": "^0.14.3"
